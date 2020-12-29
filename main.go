@@ -3,13 +3,11 @@ package main
 import (
 	"akon/bin/server"
 	"akon/handlers/twilio"
-	"fmt"
 	"log"
 	"net/http"
 	"os"
 )
 
-const message = "This is a test"
 const projectPrefix = "RoL"
 
 func main() {
@@ -26,5 +24,4 @@ func main() {
 	if err != nil {
 		logger.Fatalf("Server failed to start: %v", err)
 	}
-	fmt.Println(message)
 }
